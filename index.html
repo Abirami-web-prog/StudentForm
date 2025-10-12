@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>STUDENT FORM</h2>
+
+  <div class="form-box">
+    <label>Name</label>
+    <input type="text" id="name">
+
+    <label>Age</label>
+    <input type="number" id="age">
+
+    <label>Gender</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> FeMale
+
+    <label>Course</label>
+    <select id="course">
+      <option value="JavaScript">JavaScript</option>
+      <option value="PYTHON">PYTHON</option>
+      <option value="HTML">HTML</option>
+    </select>
+
+    <label>E-mail</label>
+    <input type="email" id="email">
+
+    <button onclick="addStudent()">Save</button>
+  </div>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>COURSE</th>
+        <th>GENDER</th>
+        <th>EMAIL</th>
+        
+        <th>ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Amal</td>
+        <td>22</td>
+        <td>PYTHON</td>
+        <td>Male</td>
+        <td>Amal@gmail.com</td>
+        <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
